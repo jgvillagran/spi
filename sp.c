@@ -3,18 +3,24 @@
 
 int main()
 {
+
 int ret;
-spiParamInit();
-Starting: onionSpi module testing...");
+spiParams test;
+spiParamInit(&test);
+printf("Starting: onionSpi module testing...");
 printf("Checking if device exists...");
-ret = spi.checkDevice();
-if(ret!=0){ printf("Dispostivo Encontrado");}
+ret = spicheckDevice();
+if(ret==EXIT_SUCCESS){
+        printf("Dispostivo Encontrado");
+}
 else
-{printf("Dispostivo no Encontrado");}
+{
+    printf("Dispostivo no Encontrado");
+    }
 printf("Registering the device...");
-ret=spi.registerDevice();
+ret=spiRegisterDevice();
 printf("Initializing the device parameters...");
-ret=spi.setupDevice();
+ret=spiSetupDevice();
 
 
 }
