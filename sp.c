@@ -5,8 +5,8 @@ int main()
 {
 
 int ret;
-spiParams test;
-spiParamInit(&test);
+spiParams params;
+spiParamInit(& params);
 printf("Starting: onionSpi module testing...");
 printf("Checking if device exists...");
 ret = spicheckDevice();
@@ -17,11 +17,5 @@ else
 {
     printf("Dispostivo no Encontrado");
     }
-printf("Registering the device...");
-ret=spiRegisterDevice();
-printf("Initializing the device parameters...");
-ret=spiSetupDevice();
-
-
 }
 
