@@ -37,9 +37,9 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	@mkdir -p $(dir $@)
 	@echo " $(CC) $(CFLAGS) $(INC) -c -o $@ $<"; $(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
-clean:
-	@echo " Cleaning..."; 
-	$(RM) -r $(BUILDDIR) $(BINDIR) $(LIBDIR)
+#clean:
+	#@echo " Cleaning..."; 
+	#$(RM) -r $(BUILDDIR) $(BINDIR) $(LIBDIR)
 
 info:
 	@echo "CC: $(CC)"
