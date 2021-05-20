@@ -4,11 +4,11 @@ CC := gcc
 # CC := clang --analyze # and comment out the linker last line for sanity
 
 # define the directories
-SRCDIR := ~~/source/projects/spi
+SRCDIR := ~/source/projects/spi
 INCDIR := ~/source/projects/spi/include
 BUILDDIR := ~/source/projects/spi/build
 BINDIR := ~/source/projects/spi/bin
-LIBDIR := ~~/source/projects/spi/lib
+LIBDIR := ~/source/projects/spi/lib
 
 # define common variables
 SRCEXT := c
