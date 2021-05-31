@@ -5,11 +5,11 @@ int main()
 {
 
 int ret;
-spiParams params;
-spiParamInit(& params);
+spiParams struct params;
+spiParamInit(&params);
 printf("Starting: onionSpi module testing...");
 printf("Checking if device exists...");
-ret = spicheckDevice();
+ret = spiCheckDevice();
 if(ret==EXIT_SUCCESS){
         printf("Dispostivo Encontrado");
 }
@@ -17,5 +17,6 @@ else
 {
     printf("Dispostivo no Encontrado");
     }
+
 }
 
